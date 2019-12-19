@@ -1,12 +1,11 @@
 {
   "name": "task-manager",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
     "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
-    "test": "env-cmd -f ./config/test.env jest --watch"
+    "test": "env-cmd -f ./config/test.env jest --watch --runInBand"
   },
   "jest": {
     "testEnvironment": "node"
@@ -30,5 +29,17 @@
     "jest": "^24.9.0",
     "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alan-Helton/task-manager-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Alan-Helton/task-manager-api/issues"
+  },
+  "homepage": "https://github.com/Alan-Helton/task-manager-api#readme",
+  "description": ""
 }
